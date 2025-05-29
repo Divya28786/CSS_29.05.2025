@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Login</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: url('p1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 50px 30px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    .icon-circle {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .icon-circle i {
+      font-size: 60px;
+      color: red; /* Red icon */
+    }
+
+    .form-container h1 {
+      color: white;
+      margin-top: 80px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 12px 0;
+      margin-bottom: 25px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid white; /* White underline */
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    /* White placeholder with slight transparency */
+    .form-container input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+      font-style: italic;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #39b00e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #39b00e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="icon-circle">
+      <i class="fas fa-user"></i>
+    </div>
+    <h1>Login Window</h1>
+    <input type="email" placeholder="Your Email Address">
+    <input type="password" placeholder="Your Password">
+    <div class="checkbox-group">
+      <input type="checkbox" id="agree">
+      <label for="agree">I agree to the <u>Terms & Conditions</u></label>
+    </div>
+    <button type="button">Login</button>
+  </div>
+
+</body>
+</html>
